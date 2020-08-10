@@ -21,7 +21,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/account' do
-
+    @user = User.find(username: params[:username, ])
   end
 
   get '/logout' do
